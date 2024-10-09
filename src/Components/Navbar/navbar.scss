@@ -1,0 +1,94 @@
+.navbar {
+  max-width: 1400px; /* Maksimal kenglik 1400px */
+  width: 100%;
+  margin: 0 auto; /* O'rtaga joylashishi uchun */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+
+  &__logo {
+    img {
+      max-width: 150px;
+      max-height: 50px; /* Logotipning o'lchamini moslang */
+    }
+  }
+
+  &__menu {
+    display: flex;
+    list-style: none;
+    transition: transform 0.3s ease-in-out;
+
+    li {
+      margin: 0 15px;
+
+      a {
+        text-decoration: none;
+        color: #555;
+        font-weight: bold;
+        font-family: "Poppins";
+
+        &:hover {
+          color: #000;
+        }
+      }
+    }
+
+    @media (max-width: 768px) {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60px;
+      right: 20px;
+      background: white;
+      border: 1px solid #ccc;
+      width: 200px;
+      z-index: 10;
+
+      &--open {
+        display: block; /* Menyu ochiladi */
+      }
+    }
+  }
+
+  &__language {
+    display: flex;
+    align-items: center;
+    font-family: "Poppins";
+
+    &-select {
+      background: white;
+      border: 1px solid #ccc;
+      padding: 5px 10px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  }
+
+  &__burger {
+    display: none; /* Katta ekranlarda yashiriladi */
+
+    &-line {
+      width: 25px;
+      height: 3px;
+      background-color: #000;
+      margin: 4px 0;
+    }
+
+    @media (max-width: 768px) {
+      display: flex; /* Kichik ekranlarda ko'rsatiladi */
+      flex-direction: column;
+      cursor: pointer;
+    }
+  }
+
+  @media (min-width: 769px) {
+    .navbar__menu {
+      display: flex; /* Katta ekranlarda menyu doim ko'rinadi */
+    }
+
+    .navbar__burger {
+      display: none; /* Katta ekranlarda burger tugmasi yashiriladi */
+    }
+  }
+}
