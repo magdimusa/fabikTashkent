@@ -1,12 +1,12 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
 import Home from "../pages/Home";
-import About from "../Pages/About";
 import Collection from "../Pages/Collection";
 import NotFound from "../Pages/NotFound";
 import Contact from "../Pages/Contact";
 import Cart from "../Pages/Cart";
 import NewCart from "../Pages/NewCart";
+import About from "../pages/About";
 
 const Router = () => {
   return (
