@@ -1,12 +1,12 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
 import Home from "../pages/Home";
-import Collection from "../pages/Collection"; // to'g'ri holatda (kichik harf)
-import NotFound from "../pages/NotFound"; // to'g'ri holatda (kichik harf)
+import Collection from "../pages/Collection";
+import NotFound from "../pages/NotFound";
 import Contact from "../pages/Contact";
 import Cart from "../pages/Cart";
 import NewCart from "../pages/NewCart";
-import About from "../pages/About";
+import About from "../pages/About"; // yo'lni kichik harflar bilan to'g'irlash
 
 const Router = () => {
   return (
