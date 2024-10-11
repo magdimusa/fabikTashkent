@@ -4,9 +4,8 @@ import logo from "../../../../public/pngwing.com.png";
 
 const Email = () => {
   return (
-    <footer className="footer">
+    <footer className="footer" id="email">
       <div className="footer__container">
-        {/* Kompaniya haqida qisqa matn */}
         <div className="footer__about">
           <div className="footer__logo">
             <img src={logo} alt="Logo" />

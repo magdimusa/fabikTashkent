@@ -23,7 +23,6 @@ export default function Home() {
       <Intro4 />
       <Summer />
       <Cloth />
-      <Email />
     </div>
   );
 }
